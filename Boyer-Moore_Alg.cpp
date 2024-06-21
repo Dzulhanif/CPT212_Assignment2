@@ -50,7 +50,7 @@ void search(string txt, string pat)
 		shift, then index j will become -1 after
 		the above loop */
 		if (j < 0) {
-			cout << "pattern occurs at shift = " << s
+			cout << "Pattern occurs at the index of = " << s
 				<< endl;
 
 			/* Shift the pattern so that the next
@@ -80,6 +80,8 @@ int main()
 {
 	string txt = "EMBUN PAGI YANG SEJUK";
 	string pat = "YANG";
+	cout << "The whole text: " << txt << endl;
+	cout << "The pattern to find: " << pat << endl;
 	search(txt, pat);
 	return 0;
 }
